@@ -5,7 +5,4 @@ class PoisController < ApplicationController
     @pois = Poi.all
   end
 
-  def show
-    @poi = Poi.find(params[:id])
-  end
 end

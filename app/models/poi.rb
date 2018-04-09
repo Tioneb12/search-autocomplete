@@ -1,5 +1,3 @@
 class Poi < ApplicationRecord
-  def to_s
-    name
-  end
+  belongs_to :way
 end

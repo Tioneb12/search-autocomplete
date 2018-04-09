@@ -1,0 +1,6 @@
+<% simple_form_for @poi do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name %>
+  <%= f.input :poi, :as => :autocomplete, :source_query => autocomplete_poi_name_pois_url %>
+  <%= f.button :submit, 'Save', :class=> 'btn-primary' %>
+<% end %>
