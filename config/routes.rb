@@ -2,8 +2,6 @@ Rails.application.routes.draw do
 
   root to: 'ways#index'
 
-
-
   resources :pois
 
   resources :ways do
